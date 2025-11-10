@@ -1,16 +1,28 @@
-## Hi there 👋
+## **Kids-TT에 오신 것을 환영합니다 👋**
 
-<!--
-**Kids-TT/Kids-TT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Kids-TT**는 유아체육 및 발달 활동을 쉽고 즐겁게 안내하는 웹/앱 서비스입니다.
 
-Here are some ideas to get you started:
+아이들의 성장과 발달을 고려한 맞춤형 프로그램을 제공합니다.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+### **📌 주요 기능**
+
+- 🏃‍♂️ 다양한 유아 체육 활동 프로그램 소개
+- 📅 일정 관리 및 예약 기능
+- 📊 아이 성장 발달 기록 및 피드백 제공
+- 💬 부모님과 강사 간 소통 지원
+
+
+
+### **🌱 Kids-TT 목표**
+
+- 아이들의 건강한 성장과 발달을 돕습니다
+- 부모님이 쉽게 체육 활동 정보를 확인할 수 있게 합니다
+- 안전하고 즐거운 놀이 환경을 제공합니다
+
+
+
+### **📫 문의**
+
+- 이메일: 
