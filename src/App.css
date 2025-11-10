@@ -85,17 +85,17 @@ main {
 
 .media-section__image {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: 20px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
 }
 
 .media-section__video {
   position: relative;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .media-section__video iframe {
