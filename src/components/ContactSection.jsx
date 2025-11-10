@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactSection({ onSubmit, isSending, sendStatus }) {
+function ContactSection({ onSubmit, isSending, sendStatus, isDisabled, cooldownSeconds }) {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-section__inner">
@@ -20,7 +20,15 @@ function ContactSection({ onSubmit, isSending, sendStatus }) {
           </label>
           <label className="contact-form__field">
             <span>연락처</span>
-            <input type="tel" name="phone" placeholder="010-0000-0000" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="010-0000-0000"
+              required
+              inputMode="tel"
+              pattern="\\d{2,3}-\\d{3,4}-\\d{4}"
+              aria-invalid={sendStatus === 'invalid-phone'}
+            />
           </label>
           <label className="contact-form__field">
             <span>원하는 과목/타임수</span>
@@ -40,7 +48,7 @@ function ContactSection({ onSubmit, isSending, sendStatus }) {
               required
             />
           </label>
-          <button type="submit" className="contact-form__submit">
+          <button type="submit" className="contact-form__submit" disabled={isDisabled}>
             {isSending ? '보내는 중...' : '메일 보내기'}
           </button>
         </form>
@@ -52,6 +60,16 @@ function ContactSection({ onSubmit, isSending, sendStatus }) {
         {sendStatus === 'error' && (
           <p className="contact-form__feedback contact-form__feedback--error">
             전송에 실패했습니다. 잠시 후 다시 시도하거나 1588-1181로 연락 부탁드립니다.
+          </p>
+        )}
+        {sendStatus === 'invalid-phone' && (
+          <p className="contact-form__feedback contact-form__feedback--error">
+            연락처 형식이 올바르지 않습니다. 010-1234-5678 또는 02-123-4567과 같은 형식으로 입력해주세요.
+          </p>
+        )}
+        {sendStatus === 'cooldown' && (
+          <p className="contact-form__feedback contact-form__feedback--notice">
+            보안을 위해 연속 전송이 제한됩니다. {cooldownSeconds}초 후 다시 시도해주세요.
           </p>
         )}
       </div>

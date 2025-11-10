@@ -185,6 +185,13 @@ main {
   box-shadow: 0 12px 24px rgba(255, 140, 64, 0.35);
 }
 
+.contact-form__submit:disabled {
+  background: linear-gradient(135deg, rgba(255, 127, 80, 0.6), rgba(255, 179, 71, 0.6));
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
 .contact-form__feedback {
   margin-top: 24px;
   font-size: 15px;
@@ -202,6 +209,11 @@ main {
 .contact-form__feedback--error {
   color: #b00020;
   background-color: rgba(176, 0, 32, 0.08);
+}
+
+.contact-form__feedback--notice {
+  color: #744210;
+  background-color: rgba(255, 193, 7, 0.18);
 }
 
 .footer {
