@@ -77,6 +77,7 @@ main {
   border-radius: 28px;
   box-shadow: 0 24px 60px rgba(23, 64, 109, 0.08);
   overflow: hidden;
+  padding: clamp(24px, 4vw, 48px);
 }
 
 .media-section:last-of-type {
@@ -242,5 +243,17 @@ main {
   .contact-section {
     margin-bottom: 80px;
     padding: 36px 20px;
+  }
+
+  .media-section {
+    margin: 0 0 32px;
+    border-radius: 24px;
+    padding: 20px 16px;
+    box-shadow: 0 16px 36px rgba(23, 64, 109, 0.12);
+  }
+
+  .media-section__image,
+  .media-section__video {
+    border-radius: 18px;
   }
 }
