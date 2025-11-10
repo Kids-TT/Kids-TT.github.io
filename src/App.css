@@ -64,6 +64,12 @@ main {
   padding: 80px 24px 60px;
 }
 
+.media-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
 .media-section {
   max-width: 1080px;
   margin: 0 auto 48px;
