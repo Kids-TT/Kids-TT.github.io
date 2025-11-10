@@ -10,20 +10,35 @@ function ContactSection({ onSubmit }) {
         </p>
         <form className="contact-form" onSubmit={onSubmit}>
           <label className="contact-form__field">
-            <span>이름</span>
-            <input type="text" name="name" placeholder="홍길동" required />
+            <span>지역/원이름</span>
+            <input
+              type="text"
+              name="location"
+              placeholder="서울시 강남구 ㅇㅇ원"
+              required
+            />
           </label>
           <label className="contact-form__field">
             <span>연락처</span>
             <input type="tel" name="phone" placeholder="010-0000-0000" required />
           </label>
           <label className="contact-form__field">
-            <span>이메일</span>
-            <input type="email" name="email" placeholder="example@kidstt.com" required />
+            <span>원하는 과목/타임수</span>
+            <input
+              type="text"
+              name="program"
+              placeholder="체육 발레 각 30분 2타임"
+              required
+            />
           </label>
           <label className="contact-form__field">
-            <span>문의 내용</span>
-            <textarea name="message" rows="6" placeholder="문의 내용을 입력해주세요." required />
+            <span>요일/시간</span>
+            <textarea
+              name="schedule"
+              rows="4"
+              placeholder="월,화 10:00~13:00 (시간·요일 변경 가능 여부 O/X)"
+              required
+            />
           </label>
           <button type="submit" className="contact-form__submit">
             메일 보내기
