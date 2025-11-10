@@ -3,17 +3,17 @@
   "name": "Kids-TT",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "kids-tt.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/jpeg"
     },
     {
-      "src": "logo192.png",
+      "src": "kids-tt-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "kids-tt-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
