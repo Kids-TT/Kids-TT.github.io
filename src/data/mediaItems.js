@@ -15,13 +15,13 @@ export const mediaItems = [
     id: 'video-1',
     type: 'video',
     title: '키즈티티 홍보 영상 1',
-    src: 'https://www.youtube.com/embed/pANiMM79IQg?start=312',
+    src: 'https://www.youtube.com/embed/pANiMM79IQg?start=312&rel=0&modestbranding=1',
   },
   {
     id: 'video-2',
     type: 'video',
     title: '키즈티티 홍보 영상 2',
-    src: 'https://www.youtube.com/embed/Fz8fz3g5Xh4',
+    src: 'https://www.youtube.com/embed/Fz8fz3g5Xh4?rel=0&modestbranding=1',
   },
   {
     id: 'image-3',
